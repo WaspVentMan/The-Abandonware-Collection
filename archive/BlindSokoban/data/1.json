@@ -1,0 +1,37 @@
+{
+    "start": [5, 7],
+    "level": [
+        {
+            "pos": [8, 8],
+            "size": [1, 1],
+            "push": true,
+            "pass": false,
+            "type": "box",
+            "z": 5
+        },
+        {
+            "pos": [10, 8],
+            "size": [1, 1],
+            "push": false,
+            "pass": true,
+            "type": "goal",
+            "z": 10
+        },
+        {
+            "pos": [0, 0],
+            "size": [16, 16],
+            "push": false,
+            "pass": true,
+            "type": "void",
+            "z": 0
+        },
+        {
+            "pos": [4, 6],
+            "size": [8, 4],
+            "push": false,
+            "pass": true,
+            "type": "floor",
+            "z": 0
+        }
+    ]
+}

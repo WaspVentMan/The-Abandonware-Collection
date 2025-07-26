@@ -1,0 +1,16 @@
+* {
+  font-family: monospace;
+}
+
+body {
+  color: white;
+}
+
+.display {
+    width: min-content;
+    height: min-content;
+    margin-top: -60px;
+    margin-bottom: -60px;
+    padding-left: 8px;
+    padding-right: 8px;
+}

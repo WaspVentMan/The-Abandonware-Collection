@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Abandonware Collection</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/PsychoGoldfishNG/NewgroundsIO-JS@8c72515/dist/NewgroundsIO.min.js"></script>
+</head>
+<body style="width: 100vw; height: 100vh; background-color: black;">
+    <div class="window" style="width: 640px; height: 480px; position: absolute; left: calc(50vw - 320px); top: calc(50vh - 240px); background: linear-gradient(180deg, rgba(0,0,50,1) 0%, rgba(0,0,100,1) 100%);">
+        <div class="loading" style="width: 640px; height: 480px; position: absolute; z-index: 1000; background-color: #000;"></div>
+        <div class="border" style="width: 640px; height: 480px; position: absolute; z-index: 1000; pointer-events: none; background-image: url(img/border.png);"></div>
+        <div class="hoverh hover hoverLeft" style="position: absolute; z-index: 75; width: 200px; height: 600px; top: -60px; left: -8px; background-image: url(img/move.png);" onclick="gamescroll(-1)"></div>
+        <div class="hoverh hover hoverRight" style="position: absolute; z-index: 75; width: 200px; height: 600px; top: -60px; right: -8px; background-image: url(img/move.png); transform: scaleX(-1);" onclick="gamescroll(1)"></div>
+        <div class="para0 noclick" style="filter: blur(1px); position: absolute; z-index: 50; width: 100000px; height: 480px; left: -180px; display: flex; transition: left 1s; background-image: url(img/paraTree0.png);"></div>
+        <div class="para1 noclick" style="filter: blur(1px); position: absolute; z-index: 50; width: 100000px; height: 480px; left: -180px; display: flex; transition: left 1s; background-image: url(img/paraTree1.png);"></div>
+        <div class="para2 noclick" style="filter: blur(1px); position: absolute; z-index: 51; width: 100000px; height: 480px; left: -180px; display: flex; transition: left 1s; background-image: url(img/graves.png);"></div>
+        <div class="para3 noclick" style="filter: blur(1px); position: absolute; z-index: 99; width: 100000px; height: 480px; left: -180px; display: flex; transition: left 1s; background-image: url(img/fog.png);"></div>
+        <div class="para4 noclick" style="filter: blur(1px); position: absolute; z-index: 53; width: 100000px; height: 480px; left: -180px; top: 0px; display: flex; transition: left 1s; background-image: url(img/2xgraves.png);"></div>
+        <div class="para5 noclick" style="filter: blur(1px); position: absolute; z-index: 99; width: 100000px; height: 480px; left: -180px; top: 20px; display: flex; transition: left 1s; background-image: url(img/fog.png);"></div>
+        <div class="para6 noclick" style="filter: blur(1px); position: absolute; z-index: 55; width: 100000px; height: 480px; left: -180px; top: -20px; display: flex; transition: left 1s; background-image: url(img/4xgraves.png);"></div>
+        <div class="para7 noclick" style="filter: blur(1px); position: absolute; z-index: 101; width: 100000px; height: 480px; left: -180px; top: 50px; display: flex; transition: left 1s; background-image: url(img/fog.png);"></div>
+        <div class="para8 noclick" style="filter: blur(1px); position: absolute; z-index: 57; width: 100000px; height: 480px; left: -180px; top: 80px; display: flex; transition: left 1s; background-image: url(img/dirt.png);"></div>
+        <div class="para9 noclick" style="filter: blur(1px); position: absolute; z-index: 101; width: 100000px; height: 480px; left: -180px; top: 80px; display: flex; transition: left 1s; background-image: url(img/fog.png);"></div>
+        <div class="para10 noclick" style="filter: blur(1px); position: absolute; z-index: 58; width: 100000px; height: 480px; left: -180px; top: 110px; display: flex; transition: left 1s; background-image: url(img/dirt.png);"></div>
+        <div class="para11 noclick" style="filter: blur(1px); position: absolute; z-index: 59; width: 100000px; height: 480px; left: -180px; top: 140px; display: flex; transition: left 1s; background-image: url(img/dirt.png);"></div>
+        <div class="games" style="position: absolute; z-index: 100; width: max-content; height: 480px; left: -180px; display: flex; transition: left 1s; background-image: url(img/graveFull.png); pointer-events: none;">
+            <div class="game">
+                <div class="year">22/5/2023</div>
+                <div class="title" onclick="window.open('archive/TOFD-Web/index.html', '_blank').focus(); unlockMedal(85561)">Tale of Four Dragons (JS)</div>
+                <audio class="eulogy" controls src="sfx/eulogy/tbd.mp3"></audio>
+            </div>
+            <div class="game">
+                <div class="year">5/7/2023</div>
+                <div class="title" onclick="window.open('archive/IdleGameTest/index.html', '_blank').focus(); unlockMedal(85562)">Idle Game Test</div>
+                <audio class="eulogy" controls src="sfx/eulogy/tbd.mp3"></audio>
+            </div>
+            <div class="game">
+                <div class="year">23/7/2023</div>
+                <div class="title" onclick="window.open('archive/LakesideSongbook/index.html', '_blank').focus(); unlockMedal(85563)">Lakeside Songbook</div>
+                <audio class="eulogy" controls src="sfx/eulogy/tbd.mp3"></audio>
+            </div>
+            <div class="game">
+                <div class="year">23/10/2023</div>
+                <div class="title" onclick="window.open('archive/DarkCaveGame/index.html', '_blank').focus(); unlockMedal(85564)">Dark Cave Game</div>
+                <audio class="eulogy" controls src="sfx/eulogy/tbd.mp3"></audio>
+            </div>
+            <div class="game">
+                <div class="year">25/1/2024</div>
+                <div class="title" onclick="window.open('archive/TerminalDesire/index.html', '_blank').focus(); unlockMedal(85565)">Terminal Desire</div>
+                <audio class="eulogy" controls src="sfx/eulogy/tbd.mp3"></audio>
+            </div>
+            <div class="game">
+                <div class="year">4/6/2024</div>
+                <div class="title" onclick="window.open('archive/Instability/index.html', '_blank').focus(); unlockMedal(85566)">Instability</div>
+                <audio class="eulogy" controls src="sfx/eulogy/tbd.mp3"></audio>
+            </div>
+            <div class="game">
+                <div class="year">10/7/2024</div>
+                <div class="title" onclick="window.open('archive/shotinthedark/index.html', '_blank').focus(); unlockMedal(85567)">Shots In The Dark</div>
+                <audio class="eulogy" controls src="sfx/eulogy/tbd.mp3"></audio>
+            </div>
+            <div class="game">
+                <div class="year">30/10/2024</div>
+                <div class="title" onclick="window.open('archive/Pseudo3D/index.html', '_blank').focus(); unlockMedal(85568)">Pseudo 3D</div>
+                <audio class="eulogy" controls src="sfx/eulogy/tbd.mp3"></audio>
+            </div>
+            <div class="game">
+                <div class="year">15/2/2025</div>
+                <div class="title" onclick="window.open('archive/WellWellWell/index.html', '_blank').focus(); unlockMedal(85569)">Well Well Well...</div>
+                <audio class="eulogy" controls src="sfx/eulogy/tbd.mp3"></audio>
+            </div>
+            <div class="game">
+                <div class="year">25/5/2025</div>
+                <div class="title" onclick="window.open('archive/BlindSokoban/index.html', '_blank').focus(); unlockMedal(85570)">Blind Sokoban</div>
+                <audio class="eulogy" controls src="sfx/eulogy/tbd.mp3"></audio>
+            </div>
+        </div>
+    </div>
+    <script src="nginit.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

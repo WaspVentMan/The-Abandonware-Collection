@@ -1,0 +1,5 @@
+Make game where you explore cave, slow platformer, low visibility, ring of light.
+
+Areas load and unload to make impossible designs, see "https://www.youtube.com/watch?v=cWpFZbjtSQg"
+
+REUSE CODE FROM THE 2D PLATFORMER BITCH

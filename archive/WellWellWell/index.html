@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well Well Well...</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/gh/PsychoGoldfishNG/NewgroundsIO-JS@8c72515/dist/NewgroundsIO.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script src="lib/KBnM.js"></script>
+</head>
+<body style="margin: 0%; background-color: black; overflow: hidden; user-select: none;">
+    <div class="gamewindow" style="width: 512px; height: 512px; position: absolute; left: calc(50vw - 256px); top: calc(50vh - 256px); background-color: white; overflow: hidden;"></div>
+    <div onclick="player.dialogue.confirm = true" class="dialoguewindow" style="display: none; width: 512px; height: 512px; position: absolute; left: calc(50vw - 256px); top: calc(50vh - 256px); overflow: hidden;">
+        <div class="portraitBackground" style="background-image: url('img/char_bg.png'); width: 128px; height: 128px; margin-top: 256px; margin-left: 384px;">
+            <div class="portrait" style="width: 128px; height: 128px;"></div>
+        </div>
+        <div style="width: 496px; height: 112px; background-image: url('img/dbox.png'); padding: 8px;">
+            <p class="dialogueName" style="margin: 0%; text-align: right; font-size: 32px; line-height: 32px;"></p>
+            <p class="dialogueText" style="margin: 0%;"></p>
+        </div>
+    </div>
+    <div class="loadingscreen" style="width: 512px; height: 512px; position: absolute; left: calc(50vw - 256px); top: calc(50vh - 256px); background-color: black; z-index: 69421; pointer-events: none;">
+        <div class="loadingBar" style="width: 256px; height: 32px; background-color: white; position: absolute; left: 128px; top: 240px;"></div>
+        <div class="loadingList" style="width: 256px; height: 32px; position: absolute; left: 128px; top: 240px; color: white; mix-blend-mode: difference; font-size: 32px; line-height: 32px; text-align: center;"></div>
+    </div>
+    <div class="deleteForBoundryBreak" style="width: 100vw; height: 100vh; pointer-events: none; z-index: 69424;">
+        <div style="position: absolute; top: 0px; left: 0px; height: calc(50vh - 256px); width: 100vw; background-color: black;"></div>
+        <div style="position: absolute; top: 0px; left: 0px; height: 100vh; width: calc(50vw - 256px); background-color: black;"></div>
+        <div style="position: absolute; bottom: 0px; right: 0px; height: calc(50vh - 256px); width: 100vw; background-color: black;"></div>
+        <div style="position: absolute; bottom: 0px; right: 0px; height: 100vh; width: calc(50vw - 256px); background-color: black;"></div>
+    </div>
+    <div class="rgb_filter" style="width: 512px; height: 512px; left: calc(50vw - 256px); top: calc(50vh - 256px); mix-blend-mode: multiply; background-image: url(img/filter/cymw.png); position: absolute; pointer-events: none;"></div>
+    <script src="data/credits.js"></script>
+    <script src="data/world.js"></script>
+    <script src="data/dialogue.js"></script>
+    <script src="script.js"></script>
+    <script src="init.js"></script>
+</body>
+</html>

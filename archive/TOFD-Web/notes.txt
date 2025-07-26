@@ -1,0 +1,21 @@
+Dragon Ideas:
+
+Chronos Dragon:
+Timed fight
+Some attacks skip / go back in time
+Music is synced to the fight timer
+Win if you survive the timer
+
+Hydra:
+Head of strength:
+The more damage you do, the less it does, blocking increases it's attack (only this head)
+
+Head of endurence:
+The more damage you do, the higher it's defence goes, blocking reduces this (only this head)
+
+Head of patience:
+Dead and rotting.
+safe if you do nothing, turns into a berserker if you try to attack while it's out, when berserker it gets several turns in a row.
+Only activates when below 25% hp.
+Constantly gets called a dead weight by the living heads
+Other heads fear it when active, they do not utter a word.

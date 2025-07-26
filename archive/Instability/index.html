@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instability</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="js/segment-display.js"></script>
+    <script src="js/numeral.min.js"></script>
+</head>
+<body style="text-align: center; background-color: black; margin: 8px;">
+    <div style="width: min-content; margin: auto;">
+        <canvas id="textDisplay1" class="display">
+            Your browser is unfortunately not supported.
+        </canvas><br>
+        <canvas id="instDisplay" style="width: min-content; height: min-content; margin-top: -50px; margin-bottom: -50px; padding-left: 8px; padding-right: 8px;">
+            Your browser is unfortunately not supported.
+        </canvas><br>
+        <canvas id="CAteDisplay" class="display">
+            Your browser is unfortunately not supported.
+        </canvas><br>
+        <canvas id="CAnuDisplay" class="display">
+            Your browser is unfortunately not supported.
+        </canvas><br>
+        <canvas id="HSteDisplay" class="display">
+            Your browser is unfortunately not supported.
+        </canvas><br>
+        <canvas id="HSnuDisplay" class="display">
+            Your browser is unfortunately not supported.
+        </canvas><br>
+        <canvas id="FSteDisplay" class="display">
+            Your browser is unfortunately not supported.
+        </canvas><br>
+        <canvas id="FSnuDisplay" class="display">
+            Your browser is unfortunately not supported.
+        </canvas><br>
+        <canvas id="RSteDisplay" class="display">
+            Your browser is unfortunately not supported.
+        </canvas><br>
+        <canvas id="RSnuDisplay" class="display">
+            Your browser is unfortunately not supported.
+        </canvas><br>
+        <canvas id="GNteDisplay" class="display">
+            Your browser is unfortunately not supported.
+        </canvas><br>
+        <canvas id="GNcoDisplay" class="display">
+            Your browser is unfortunately not supported.
+        </canvas><br>
+        <canvas id="GNnuDisplay" class="display">
+            Your browser is unfortunately not supported.
+        </canvas><br>
+        <canvas id="GNmuDisplay" class="display">
+            Your browser is unfortunately not supported.
+        </canvas><br>
+        <div style="font-size: 0;">
+            <button style="width: 10%;" onclick="if (reality.selgen > 0){reality.selgen -= 1}"><</button>
+            <button style="width: 80%;" onclick="if (reality.cash >= reality.gen[reality.selgen][2]){reality.gen[reality.selgen][0] += 1; reality.cash -= reality.gen[reality.selgen][2]; reality.gen[reality.selgen][2] *= 2; reality.gen[0][1] *= 1.05}">UPGRADE</button>
+            <button style="width: 10%;" onclick="if (reality.selgen < reality.gencount-1){reality.selgen += 1}">></button><br><br>    
+        </div>
+        
+        <br><br><button onclick="reality.cash += 1">EARN</button><br>
+        <button onclick="if (reality.cash >= reality.gen[0][2]){reality.gen[0][0] += 1; reality.cash -= reality.gen[0][2]; reality.gen[0][2] *= 2; reality.gen[0][1] *= 1.05}">GEN1</button><br>
+        <button onclick="if (reality.cash >= reality.gen[1][2]){reality.gen[1][0] += 1; reality.cash -= reality.gen[1][2]; reality.gen[0][2] *= 2; reality.gen[1][1] *= 1.05}">GEN2</button><br>
+        <button onclick="runSetup()">RESET REALITY</button><br>
+
+        
+    </div>
+
+    <script src="js/dispconn.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

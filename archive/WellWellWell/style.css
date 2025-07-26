@@ -1,0 +1,45 @@
+* {
+    image-rendering: pixelated;
+    text-rendering: pixelated;
+    font-family: 'Times New Roman', Times, serif;
+
+    line-height: 16px;
+
+    overflow-wrap: always;
+
+    margin: 0%;
+
+    font-weight: bolder
+}
+
+.fade_hover {
+    opacity: 0%;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.fade_hover:hover {
+    opacity: 100%;
+}
+
+.credits_text {
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    
+    padding: 15px;
+}
+
+@keyframes bg {
+    0% {background-position-x: 0px; background-position-y: 0px; filter: hue-rotate(0deg);}
+    100% {background-position-x: 64px; background-position-y: 64px; filter: hue-rotate(360deg);}
+}
+
+@keyframes crt {
+      0% {background-position-y: 0px}
+     25% {background-position-y: 0px}
+     25% {background-position-y: 1px}
+     50% {background-position-y: 1px}
+     50% {background-position-y: 2px}
+     75% {background-position-y: 2px}
+     75% {background-position-y: 3px}
+    100% {background-position-y: 3px}
+}

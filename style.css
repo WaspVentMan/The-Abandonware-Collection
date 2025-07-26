@@ -1,0 +1,81 @@
+@font-face {
+    font-family: PORTMANTEAU;
+    src: url("font/PORTMANTEAU.ttf");
+}
+
+* {
+    overflow: hidden;
+}
+
+.noclick {
+    pointer-events: none;
+}
+
+.hover {
+    opacity: 0%;
+    filter: blur(5px);
+    transition: opacity 0.1s ease-in-out;
+}
+
+.hoverh:hover {
+    opacity: 50%;
+}
+
+.game {
+    width: 1000px;
+    height: 480px;
+}
+
+.year {
+    width: 340px;
+    height: 24px;
+    margin-left: 330px;
+    margin-top: 40px;
+    text-align: center;
+    overflow: visible;
+
+    user-select: none;
+
+    font-size: 36px; 
+    font-family: PORTMANTEAU, 'Courier New', Courier, monospace;
+    color: rgba(30, 30, 30, 0.75);
+
+    filter: blur(1px);
+}
+
+.title {
+    width: 340px;
+    height: 128px;
+    margin-left: 330px;
+    margin-top: 136px;
+    text-align: center;
+
+    user-select: none;
+    cursor: pointer;
+    pointer-events: all;
+
+    font-size: 36px; 
+    font-family: PORTMANTEAU, 'Courier New', Courier, monospace;
+    color: rgba(30, 30, 30, 0.75);
+
+    filter: blur(1px);
+
+    transition: color 0.1s ease-in-out;
+}
+
+.title:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.eulogy {
+    width: 300px;
+    height: 128px;
+    margin-left: 350px;
+    margin-top: 10px;
+
+    pointer-events: all;
+}
+
+.loading {
+    transition: opacity 2s ease-in-out;
+}

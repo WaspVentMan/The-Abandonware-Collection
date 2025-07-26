@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blind Sokoban</title>
+
+    <script src="lib/KBnM.js"></script>
+</head>
+<body>
+    <div class="gameWindiow" style="width: 512px; height: 512px; overflow: hidden; position: absolute; top: calc(50vh - 256px); left: calc(50vw - 256px); background-color: white;">
+        <div class="cursor" style="position: absolute; width: 32px; height: 32px; background-image: url(img/cursor.png); z-index: 100; transition: left 0.1s ease-in-out, bottom 0.1s ease-in-out;"></div>
+        <div class="objects" style="width: 512px; height: 512px;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

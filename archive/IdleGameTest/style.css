@@ -1,0 +1,16 @@
+p {
+    margin: 0%;
+}
+
+.autoHolder{
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-width: 33%;
+    width: 100%;
+
+    text-align: center;
+}
+
+.button{
+    width: 100%;
+}

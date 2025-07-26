@@ -1,0 +1,20 @@
+body{
+    background: grey;
+    margin: 75px;
+}
+
+.map{
+    position: fixed;
+}
+
+.player{
+    position: fixed;
+    left: 225px;
+    width: 75px;
+    transition: 0.125s;
+}
+
+.dialogueBox{
+    position: fixed;
+    padding: 250px;
+}
